@@ -1,0 +1,30 @@
+:root{--bg:#f6f3ee;--card:#fff;--ink:#2b2622;--muted:#6f665e;--line:#e3ddd4;--moss:#3d5a45;--soft:#eef3ef}
+@media (prefers-color-scheme:dark){:root{--bg:#1c1f1b;--card:#252923;--ink:#ece8e1;--muted:#b3aba1;--line:#3a3f37;--moss:#8cc29a;--soft:#22342a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.7}
+a{color:var(--moss)}
+header.top{background:#22301f;color:#fff}
+header.top .in,main,footer .in{max-width:880px;margin:0 auto;padding:0 16px}
+header.top .in{display:flex;align-items:center;justify-content:space-between;gap:12px;height:56px;flex-wrap:wrap}
+header.top a{color:#fff;text-decoration:none}
+header.top b{font-size:18px}
+header.top nav{display:flex;gap:14px;font-size:14px;opacity:.9}
+main{padding-top:24px;padding-bottom:40px}
+h1{font-size:28px;margin:8px 0 4px}
+h2{font-size:20px;margin:32px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--line)}
+h3{font-size:16px;margin:20px 0 6px}
+.lead{color:var(--muted);margin:0 0 16px}
+.hero{display:grid;grid-template-columns:2fr 1fr;gap:8px;margin:16px 0;height:380px}
+.hero img{width:100%;height:100%;min-height:0;object-fit:cover;border-radius:12px;display:block}
+.hero .side{display:grid;grid-template-rows:1fr 1fr;gap:8px;min-height:0}
+@media (max-width:600px){.hero{grid-template-columns:1fr;height:auto}.hero>img{aspect-ratio:4/3}.hero .side{grid-template-columns:1fr 1fr;grid-template-rows:auto}.hero .side img{aspect-ratio:1}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+td{padding:8px 4px;border-bottom:1px dashed var(--line);vertical-align:top}
+td.p{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.best{display:inline-block;background:var(--soft);color:var(--moss);font-size:12px;font-weight:700;border-radius:99px;padding:0 8px;margin-left:6px}
+ul{padding-left:20px}
+.en{color:var(--muted);font-size:14px}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px;padding:18px 0 30px}
+footer a{margin-right:12px}
